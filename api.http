@@ -1,0 +1,26 @@
+@api_HostAddress = http://localhost:5270
+
+### Get Questions by QuizId
+GET {{api_HostAddress}}/api/questions/1
+Accept: application/json
+
+###
+
+### Validate User Answer
+POST {{api_HostAddress}}/api/answers/validate
+Content-Type: application/json
+Accept: application/json
+
+{
+    "sessionId": 1,
+    "questionId": 1,
+    "optionId": 2
+}
+
+###
+
+### Get Results by SessionId
+GET {{api_HostAddress}}/api/results/1
+Accept: application/json
+
+###
