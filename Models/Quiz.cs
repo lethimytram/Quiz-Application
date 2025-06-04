@@ -9,7 +9,7 @@ namespace api.Models
     {
         public int QuizId { get; set; }
         public string Title { get; set; }
-        public int PassingCriteria { get; set; } // % để pass (ví dụ: 70)
+        public int PassingCriteria { get; set; } 
         public ICollection<Question> Questions { get; set; }
         public ICollection<QuizSession> QuizSessions { get; set; }
     }
